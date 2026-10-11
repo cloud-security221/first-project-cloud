@@ -1,10 +1,221 @@
-@page
-@model IndexModel
-@{
-    ViewData["Title"] = "Accueil";
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Délices de Coumba</title>
 
-<div class="text-center">
-    <h1>Hello Absa</h1>
-    <p>Bienvenue sur mon application .NET déployée sur Azure App Service.</p>
-</div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #faf7f2;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #a0522d, #d2691e);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background-color: #5c3317;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            color: #a0522d;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        .menu {
+            padding: 60px 20px;
+            background-color: white;
+        }
+
+        .menu h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #a0522d;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .card {
+            background: #fff8f0;
+            width: 280px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #a0522d;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #d2691e;
+            margin-top: 10px;
+        }
+
+        .about {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            margin-bottom: 20px;
+            color: #a0522d;
+        }
+
+        .contact {
+            background-color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: #a0522d;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #5c3317;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍽️ Les Délices de Coumba</h1>
+    <p>Restaurant Africain & Cuisine Maison</p>
+</header>
+
+<nav>
+    #accueilAccueil</a>
+    #menuMenu</a>
+    #aproposÀ propos</a>
+    #contactContact</a>
+</nav>
+
+<section class="hero" id="accueil">
+    <h2>Bienvenue chez Les Délices de Coumba</h2>
+    <p>
+        Venez découvrir les saveurs authentiques de l'Afrique de l'Ouest.
+        Nos plats sont préparés avec passion à partir d'ingrédients frais
+        et de recettes traditionnelles.
+    </p>
+</section>
+
+<section class="menu" id="menu">
+    <h2>Nos Spécialités</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🥘 Thiéboudiène</h3>
+            <p>Riz au poisson accompagné de légumes frais.</p>
+            <div class="price">15 €</div>
+        </div>
+
+        <div class="card">
+            <h3>🍗 Yassa Poulet</h3>
+            <p>Poulet mariné aux oignons et citron.</p>
+            <div class="price">13 €</div>
+        </div>
+
+        <div class="card">
+            <h3>🥩 Mafé</h3>
+            <p>Sauce arachide accompagnée de viande et de riz.</p>
+            <div class="price">14 €</div>
+        </div>
+
+        <div class="card">
+            <h3>🐟 Poisson Braisé</h3>
+            <p>Poisson grillé servi avec attiéké.</p>
+            <div class="price">16 €</div>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="apropos">
+    <h2>Notre Histoire</h2>
+    <p>
+        Les Délices de Coumba est un restaurant familial qui met à l'honneur
+        les recettes traditionnelles africaines dans une ambiance chaleureuse
+        et conviviale.
+    </p>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>📍 Villeurbanne, France</p>
+    <p>📞 06 00 00 00 00</p>
+    <p>📧 contact@lesdelicesdecoumba.fr</p>
+</section>
+
+<footer>
+    <p>© 2026 Les Délices de Coumba - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
